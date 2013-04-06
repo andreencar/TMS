@@ -1,0 +1,13 @@
+﻿@Model DropNet.Models.Metadata;
+
+@{
+    ViewBag.Title = "DropboxAuthorize";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Succesfully Logged In!</h2>
+@foreach (DropNet.Models.MetaData a in Model.Contents) { 
+    <p>
+        @a.Name
+    </p>
+}
